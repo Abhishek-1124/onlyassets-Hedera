@@ -1,4 +1,4 @@
-🏠 RWA Tokenization Platform
+ RWA Tokenization Platform
 
 **Real-World Asset Tokenization on Hedera Hashgraph**
 
@@ -6,7 +6,7 @@ A comprehensive platform for tokenizing real-world assets including Real Estate,
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [Platform Overview](#-platform-overview)
 2. [Key Features](#-key-features)
@@ -29,7 +29,7 @@ A comprehensive platform for tokenizing real-world assets including Real Estate,
 
 ---
 
-## 🌟 Platform Overview
+##  Platform Overview
 
 The RWA Tokenization Platform enables users to tokenize real-world assets and trade them on a decentralized marketplace. Built on Hedera Hashgraph, the platform offers:
 
@@ -41,27 +41,27 @@ The RWA Tokenization Platform enables users to tokenize real-world assets and tr
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🏢 Asset Tokenization
+###  Asset Tokenization
 - **Multiple Asset Types**: Support for 5 different asset categories
 - **IPFS Storage**: Decentralized storage for asset metadata and images
 - **Automatic Listing**: Tokens are automatically listed on marketplace after minting
 - **Flexible Supply**: Support for both fungible and non-fungible tokens
 
-### 🛒 Decentralized Marketplace
+###  Decentralized Marketplace
 - **String Token IDs**: Hedera-native token ID format (0.0.XXXXXX)
 - **No Token Custody**: Marketplace doesn't hold tokens, only records listings
 - **Native Transfers**: Uses Hedera's native transfer operations
 - **HBAR Payments**: Direct HBAR payments for purchases
 
-### 💰 Revenue Distribution
+###  Revenue Distribution
 - **Automatic Splitting**: PaymentSplitter contract distributes rental income
 - **Proportional Rewards**: Income distributed based on token ownership
 - **Manager Controls**: Authorized managers can submit rental payments
 - **Real-time Tracking**: Complete payment history and analytics
 
-### 🔐 Role-Based Access
+###  Role-Based Access
 - **Admin Control**: Platform administration and user management
 - **Issuer Permissions**: Authorized asset tokenization
 - **Manager Assignment**: Asset-specific management roles
@@ -69,7 +69,7 @@ The RWA Tokenization Platform enables users to tokenize real-world assets and tr
 
 ---
 
-## 🛠 Technology Stack
+##  Technology Stack
 
 ### Blockchain & Smart Contracts
 - **Hedera Hashgraph**: Primary blockchain network
@@ -100,7 +100,7 @@ The RWA Tokenization Platform enables users to tokenize real-world assets and tr
 
 ---
 
-## 📜 Smart Contracts Architecture
+##  Smart Contracts Architecture
 
 <img width="1873" height="708" alt="image" src="https://github.com/user-attachments/assets/586f3136-b0f9-4a8f-b5de-bd1a509bac26" />
 
@@ -120,11 +120,11 @@ function isManager(address _address, uint256 _tokenId) external view returns (bo
 ```
 
 **Features**:
-- ✅ **Issuer Management**: Add/remove authorized asset issuers
-- ✅ **Manager Assignment**: Assign managers to specific tokens
-- ✅ **Platform Controls**: Emergency pause/resume marketplace
-- ✅ **Metadata Storage**: IPFS metadata for users and roles
-- ✅ **Permission Validation**: Role-based access control
+-  **Issuer Management**: Add/remove authorized asset issuers
+-  **Manager Assignment**: Assign managers to specific tokens
+-  **Platform Controls**: Emergency pause/resume marketplace
+-  **Metadata Storage**: IPFS metadata for users and roles
+-  **Permission Validation**: Role-based access control
 
 ---
 
@@ -142,11 +142,11 @@ function getMarketplaceBalance() external view returns (uint256)
 ```
 
 **Features**:
-- ✅ **No Token Custody**: Marketplace doesn't hold user tokens
-- ✅ **String Token IDs**: Native Hedera token ID support
-- ✅ **HBAR Accumulation**: Builds HBAR reserves for buybacks
-- ✅ **Metadata Integration**: Links to IPFS asset metadata
-- ✅ **Payment Splitter Integration**: Automatic rental distribution
+-  **No Token Custody**: Marketplace doesn't hold user tokens
+-  **String Token IDs**: Native Hedera token ID support
+-  **HBAR Accumulation**: Builds HBAR reserves for buybacks
+-  **Metadata Integration**: Links to IPFS asset metadata
+-  **Payment Splitter Integration**: Automatic rental distribution
 
 **Workflow**:
 1. **List Asset**: Record asset availability (tokens transferred via Hedera)
@@ -169,11 +169,11 @@ function getTokenHolders(string _tokenId) external view returns (TokenHolder[])
 ```
 
 **Features**:
-- ✅ **Proportional Distribution**: Income split based on ownership percentage
-- ✅ **Manager Controls**: Only authorized managers can submit payments
-- ✅ **String Token Support**: Compatible with Hedera token IDs
-- ✅ **Automatic Calculation**: Smart distribution algorithms
-- ✅ **Payment History**: Complete audit trail
+-  **Proportional Distribution**: Income split based on ownership percentage
+-  **Manager Controls**: Only authorized managers can submit payments
+-  **String Token Support**: Compatible with Hedera token IDs
+-  **Automatic Calculation**: Smart distribution algorithms
+-  **Payment History**: Complete audit trail
 
 **Distribution Logic**:
 ```
@@ -187,11 +187,11 @@ User Share = (User Tokens / Total Tokens) × Rental Payment
 **Purpose**: Native token creation and management on Hedera
 
 **Features**:
-- ✅ **Low Fees**: $0.0001 per token creation
-- ✅ **Fast Finality**: 3-5 second transaction confirmation
-- ✅ **Native Integration**: Built into Hedera consensus
-- ✅ **Enterprise Security**: Bank-grade security model
-- ✅ **Regulatory Compliance**: Built-in compliance features
+-  **Low Fees**: $0.0001 per token creation
+-  **Fast Finality**: 3-5 second transaction confirmation
+-  **Native Integration**: Built into Hedera consensus
+-  **Enterprise Security**: Bank-grade security model
+-  **Regulatory Compliance**: Built-in compliance features
 
 **Token Types**:
 - **Fungible Tokens**: For divisible assets (commodities, shares)
@@ -200,29 +200,29 @@ User Share = (User Tokens / Total Tokens) × Rental Payment
 
 ---
 
-## 🚀 Hedera Integration & Benefits
+##  Hedera Integration & Benefits
 
 ### Why Hedera Hashgraph?
 
-#### 🌐 **Network Performance**
+#### **Network Performance**
 - **10,000+ TPS**: Handles enterprise-scale transactions
 - **3-5 Second Finality**: Near-instant transaction confirmation
 - **Fixed Low Fees**: Predictable $0.0001 transaction costs
 - **Carbon Negative**: Environmentally sustainable blockchain
 
-#### 🔒 **Enterprise Security**
+#### **Enterprise Security**
 - **Bank-Grade Security**: Used by major enterprises
 - **Consensus Algorithm**: Patented Hashgraph consensus
 - **Governing Council**: 39 global enterprises governing the network
 - **Regulatory Compliance**: Built-in compliance features
 
-#### 💼 **Native Token Service**
+#### **Native Token Service**
 - **No Smart Contracts Needed**: Tokens are native to the network
 - **Built-in Features**: Freeze, KYC, compliance controls
 - **Atomic Transactions**: Guaranteed transaction consistency
 - **Hedera Account Model**: Native account system
 
-#### 🌍 **Real-World Adoption**
+#### **Real-World Adoption**
 - **Enterprise Partners**: Google, IBM, Boeing, Deutsche Telekom
 - **Use Cases**: Supply chain, payments, identity, NFTs
 - **Regulatory Clarity**: Working with regulators globally
@@ -236,20 +236,20 @@ User Share = (User Tokens / Total Tokens) × Rental Payment
 | Finality | 3-5 sec | 1-6 min | 2-5 sec |
 | Fees | $0.0001 | $1-50 | $0.01-1 |
 | Energy | Carbon Negative | High | Medium |
-| Enterprise | ✅ Native | ❌ Limited | ⚠️ Partial |
+| Enterprise |  Native |  Limited | Partial |
 
 ---
 
-## 👥 User Roles & Workflows
+##  User Roles & Workflows
 
-### 🔧 **Admin Workflow**
+### **Admin Workflow**
 1. **Platform Management**: Add/remove issuers and managers
 2. **Permission Control**: Assign managers to specific tokens
 3. **Emergency Controls**: Pause/resume marketplace operations
 4. **System Monitoring**: Track platform metrics and performance
 5. **Revenue Oversight**: Monitor fee collection and distribution
 
-### 🏭 **Issuer Workflow**
+### **Issuer Workflow**
 1. **Asset Creation**: Fill comprehensive asset details form
 2. **Image Upload**: Upload asset images to IPFS
 3. **Metadata Generation**: Create comprehensive metadata
@@ -257,14 +257,14 @@ User Share = (User Tokens / Total Tokens) × Rental Payment
 5. **Auto-Listing**: Automatic marketplace listing with random ID
 6. **Portfolio Management**: Track created and managed assets
 
-### 👨‍💼 **Manager Workflow**
+###  **Manager Workflow**
 1. **Asset Management**: Oversee assigned tokenized assets
 2. **Rental Submission**: Submit rental income in HBAR
 3. **Income Distribution**: Automatic distribution to token holders
 4. **Performance Tracking**: Monitor asset performance and yields
 5. **Holder Communication**: Manage token holder relationships
 
-### 👤 **User Workflow**
+### **User Workflow**
 1. **Marketplace Browsing**: Explore categorized asset listings
 2. **Asset Research**: Review detailed asset information
 3. **Purchase Decision**: Buy tokens with HBAR payments
@@ -274,7 +274,7 @@ User Share = (User Tokens / Total Tokens) × Rental Payment
 
 ---
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 ```bash
@@ -315,7 +315,7 @@ npm start
 
 ---
 
-## 📝 Contract Deployment
+## Contract Deployment
 
 ### Deploy Admin Contract
 ```bash
@@ -342,7 +342,7 @@ PaymentSplitter Contract: 0x9cA1cC1eF3E18C741b5117eA51481E9bb66aeee1
 
 ---
 
-## ⚙️ Environment Configuration
+## Environment Configuration
 
 ### Frontend Environment (.env)
 ```bash
@@ -387,7 +387,7 @@ PINATA_SECRET_KEY=your_pinata_secret_key
 
 ---
 
-## 🔌 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 ```
@@ -420,7 +420,7 @@ GET /api/ipfs/fetch/:hash
 
 ---
 
-## 🎨 Frontend Architecture
+## Frontend Architecture
 
 ### Component Structure
 ```
@@ -457,7 +457,7 @@ src/
 
 ---
 
-## 🔧 Backend Services
+## Backend Services
 
 ### Service Architecture
 ```
@@ -486,7 +486,7 @@ Backend/
 
 ---
 
-## 📁 IPFS Integration
+## IPFS Integration
 
 ### Storage Strategy
 - **Images**: Asset photos and documents
@@ -543,7 +543,7 @@ const uploadImageToIPFS = async (file: File): Promise<string> => {
 
 ---
 
-## 🛡️ Security Features
+## Security Features
 
 ### Smart Contract Security
 - **Access Controls**: Role-based permissions
@@ -565,7 +565,7 @@ const uploadImageToIPFS = async (file: File): Promise<string> => {
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Smart Contract Tests
 ```bash
@@ -593,7 +593,7 @@ npm run test:integration
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Frontend Deployment (Vercel)
 ```bash
@@ -625,7 +625,7 @@ npx hardhat deploy --network hedera-mainnet
 
 ---
 
-## 📊 Monitoring & Analytics
+## Monitoring & Analytics
 
 ### Platform Metrics
 - **Transaction Volume**: Track total transaction value
@@ -640,7 +640,7 @@ npx hardhat deploy --network hedera-mainnet
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 ### Development Guidelines
 1. **Fork Repository**: Create personal fork
@@ -658,13 +658,13 @@ npx hardhat deploy --network hedera-mainnet
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Hedera Hashgraph**: For providing enterprise-grade blockchain infrastructure
 - **OpenZeppelin**: For secure smart contract libraries
@@ -673,7 +673,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-## 📞 Support & Contact
+## Support & Contact
 
 - **Documentation**: [Platform Docs](https://docs.rwa-platform.com)
 - **Support Email**: support@rwa-platform.com
